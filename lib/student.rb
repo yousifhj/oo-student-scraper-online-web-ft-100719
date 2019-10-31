@@ -14,7 +14,8 @@ class Student
   def self.create_from_collection(students_array)
     students_array.each do |student_hash| #each student is a hash
     Student.new(student_hash)
-  end
+  end 
+end
 
   def add_student_attributes(attributes_hash)
     self.send("twitter=", attributes_hash[:twitter])
@@ -29,5 +30,5 @@ class Student
     @@all
   end
 end
-end 
+
 
